@@ -1,0 +1,46 @@
+clock-face {
+	display: block;
+	width: 100px;
+	height: 100px;
+	position: relative;
+	border: 6px solid black;
+	border-radius: 50%;
+}
+.clock-face-container::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 12px;
+	height: 12px;
+	margin: -6px 0 0 -6px;
+	background: black;
+	border-radius: 6px;
+	content: "";
+	display: block;
+}
+.clock-face-container > div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: black;
+}
+.clock-face-hour {
+	margin: -4px 0 -4px -25%;
+	padding: 4px 0 4px 25%;
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	border-radius: 4px 0 0 4px;
+}
+.clock-face-minute {
+	margin: -40% -3px 0;
+	padding: 40% 3px 0;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	border-radius: 3px 3px 0 0;
+}
+.clock-face-second {
+	margin: -40% -1px 0 0;
+	padding: 40% 1px 0;
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+}
