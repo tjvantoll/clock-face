@@ -27,6 +27,7 @@ clock-face {
 .clock-face-hour {
 	margin: -4px 0 -4px -25%;
 	padding: 4px 0 4px 25%;
+	-ms-transform-origin: 100% 50%;
 	-webkit-transform-origin: 100% 50%;
 	transform-origin: 100% 50%;
 	border-radius: 4px 0 0 4px;
@@ -34,6 +35,7 @@ clock-face {
 .clock-face-minute {
 	margin: -40% -3px 0;
 	padding: 40% 3px 0;
+	-ms-transform-origin: 50% 100%;
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
 	border-radius: 3px 3px 0 0;
@@ -41,6 +43,7 @@ clock-face {
 .clock-face-second {
 	margin: -40% -1px 0 0;
 	padding: 40% 1px 0;
+	-ms-transform-origin: 50% 100%;
 	-webkit-transform-origin: 50% 100%;
 	transform-origin: 50% 100%;
 }
