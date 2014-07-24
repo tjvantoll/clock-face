@@ -37,7 +37,7 @@
 			secondAngle = second * 6,
 			minuteAngle = minute * 6 + secondAngle / 60,
 			hourAngle = ( ( hour % 12 ) / 12 ) * 360 + 90 + minute / 12;
-		
+
 		this.hourElement.style.transform = "rotate(" + hourAngle + "deg)";
 		this.minuteElement.style.transform = "rotate(" + minuteAngle + "deg)";
 		this.secondElement.style.transform = "rotate(" + secondAngle + "deg)";
