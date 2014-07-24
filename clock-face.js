@@ -36,11 +36,17 @@
 			second = this.second || now.getSeconds(),
 			secondAngle = second * 6,
 			minuteAngle = minute * 6 + secondAngle / 60,
-			hourAngle = ( ( hour % 12 ) / 12 ) * 360 + 90 + minute / 12;
+			hourAngle = ( ( hour % 12 ) / 12 ) * 360 + 90 + minute / 12,
+			hourRule = "rotate(" + hourAngle + "deg)",
+			minuteRule = minuteRule,
+			secondRule = "rotate(" + secondAngle + "deg)";
 
-		this.hourElement.style.transform = "rotate(" + hourAngle + "deg)";
-		this.minuteElement.style.transform = "rotate(" + minuteAngle + "deg)";
-		this.secondElement.style.transform = "rotate(" + secondAngle + "deg)";
+		this.hourElement.style.webkitTransform = hourRule;
+		this.hourElement.style.transform = hourRule;
+		this.minuteElement.style.webkitTransform = minuteRule;
+		this.minuteElement.style.transform = minuteRule;
+		this.secondElement.style.webkitTransform = secondRule;
+		this.secondElement.style.transform = secondRule;
 	};
 	proto.attributeChangedCallback = function( attrName, oldVal, newVal ) {
 		if ( /hour|minute|second/.test( attrName ) ) {
