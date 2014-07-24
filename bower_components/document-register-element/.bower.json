@@ -1,0 +1,14 @@
+{
+  "name": "document-register-element",
+  "homepage": "https://github.com/WebReflection/document-register-element",
+  "version": "0.0.8",
+  "_release": "0.0.8",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.8",
+    "commit": "4b0c2f32aed118e5aa51875ed065f815ed9f22f7"
+  },
+  "_source": "git://github.com/WebReflection/document-register-element.git",
+  "_target": "*",
+  "_originalSource": "WebReflection/document-register-element"
+}
