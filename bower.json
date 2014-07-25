@@ -1,7 +1,7 @@
 {
   "name": "clock-face",
   "main": "clock-face.js",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/tjvantoll/clock-face",
   "authors": [
     "TJ VanToll <tj.vantoll@gmail.com>"
@@ -9,7 +9,6 @@
   "description": "A web component for building clocks",
   "license": "MIT",
   "dependencies": {
-    "CustomElements": "Polymer/CustomElements#>0.3.0",
     "document-register-element": "WebReflection/document-register-element"
   },
   "ignore": [
