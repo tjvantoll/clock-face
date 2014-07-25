@@ -4,9 +4,9 @@ A web component for building clocks, inspired by the clock that appears on [Mome
 
 <img src="http://i.imgur.com/zbP1ode.png" alt="clock face">
 
-### Live Demo
+### Demo
 
-[Here you go](http://jsfiddle.net/tj_vantoll/gnf2j/).
+[Live demo](http://jsfiddle.net/tj_vantoll/gnf2j/).
 
 ### Usage
 
