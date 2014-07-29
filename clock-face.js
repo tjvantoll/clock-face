@@ -52,7 +52,7 @@
 		this.secondElement.style.transform = secondRule;
 	};
 	proto.attributeChangedCallback = function( attrName, oldVal, newVal ) {
-		if ( /hour|minute|second/.test( attrName ) ) {
+		if ( /^(hour|minute|second)$/.test( attrName ) ) {
 			this.readAttributes();
 			this.updateClock();
 		}
