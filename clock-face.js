@@ -19,7 +19,7 @@
 		
 		this.updateClock();
 		if ( !this.hour && !this.minute && !this.second  ) {
-			this.interval = setInterval(function() {
+			setInterval(function() {
 				that.updateClock();
 			}, 1000 );
 		}
